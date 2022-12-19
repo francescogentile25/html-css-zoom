@@ -43,17 +43,33 @@
 .fa-maximize{
     color: white;
     font-size: 20px;
-    position:absolute;
+    position:absolute; /* da sisteamre non va bene absolute*/
     top: 12px;
     right: 10px;
     padding: 9px;
     border-radius: 5px;
     background-color: #4a4a4a;
 }
+
+
 .container{
-    padding: 50px;
-    min-height: 300px;
-    min-width: 1000px;
-    margin: 0 auto;
-    background-color: white;
+    width: 100%;
+    margin: 90px 120px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+    gap:4px
+}
+
+.card{
+    background-image: url("https://picsum.photos/200/300");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    width:calc((100%/ 7) - 14px);
+    background-color: red;
+    border: 1px solid black;
+    margin-left: 2px;
+    margin-right: 2px;
+
 }
